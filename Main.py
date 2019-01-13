@@ -205,7 +205,7 @@ async def help(ctx):
 	embed.add_field(name=":play", value="please be careful when using this command it will break if theres music playing.")
 	embed.add_field(name=":stop", value="to stop the music from playing")
 	embed.add_field(name=":warn", value=":warn @user <reason>")
-	embed.add_field(name="mute", value=":mute @user <reason>")
+	embed.add_field(name=":mute", value=":mute @user <reason>")
 	embed.add_field(name=":unmute", value=":unmute @user <reason>")
 	embed.add_field(name=":kick", value=":kick @user <reason>")
 	embed.add_field(name=":ban", value=":ban @user <reason>")
