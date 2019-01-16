@@ -18,6 +18,20 @@ async def on_ready():
 	print("User name:", bot.user.name)
 	print("User id:", bot.user.id)
 	print('---------------')
+	
+  if message.content.startswith('.restart'):
+		await asyncio.sleep(5)
+		await bot.send_message(message.channel, ":arrows_counterclockwise: Restarting Bot...".format(message))
+		await asyncio.sleep(8)
+		await bot.send_message(message.channel, ":arrows_counterclockwise: Updating OS...".format(message))
+		await asyncio.sleep(5)
+		await bot.send_message(message.channel, ":arrows_counterclockwise: Updating Commands...".format(message))
+		await asyncio.sleep(5)
+		await bot.send_message(message.channel, ":arrows_counterclockwise: Removing Streaming...".format(message))
+		await asyncio.sleep(5)
+		await bot.send_message(message.channel, ":arrows_counterclockwise: Confirming System...".format(message))
+		await asyncio.sleep(7)
+		await bot.send_message(message.channel, ":white_check_mark: Bot Successfully Restarted".format(message))
 
 @bot.event
 async def on_message(message):
